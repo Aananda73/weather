@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>WeatherApi</title>
+	<link rel="stylesheet" type="text/css" href="wt1.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+</head>
+<body  >
+	<!--this creates the search input text button
+		with placeholder as search city.....-->
+	
+	<div class="bg">
+		
+		
+
+		
+		<!--this is to create celsius and fahrenheit button in "temp" class as button-->
+
+		<button class="temp" id="navbar" onclick='ch2()'>Celcius</button>	
+		<button class="temp" id="navbar" onclick='ch1()'>Fahrenheit</button>
+		
+	</div>
+
+	<p id="dt" ></p>
+	<!--now lower part which contains "location"
+		 and "current weather situation" -->
+	<div id='low1' class="lower">
+		<span id='se'><input class="city" id="search-text" type="text"  placeholder="Search city..." ></span>
+		
+
+
+		<div class="location">
+			<h2 id="city-name"> New York</h2>
+		</div>
+		    
+		<div class="weather"><h3><span id="wh-name">Rain</span><img src="" id="icon"></h3></div>
+    
+
+
+    <!--this is to create the temperature line with deegee image-->
+
+    
+    	<div class="temperatute"><h2 id="temp" ></h2></div>
+
+    <!--now to crete our information table-->
+	    <div class="info">
+	    	<div class= "p-info" >Humidity  </div>              
+	    	<div class="change-info" id="humid" >  55%</div>
+	    	
+	    	<div class= "p-info">Wind </div>                    
+	    	<div class="change-info" id="wind">  10 km/hr</div>
+	    	<div class= "p-info">Sunrise </div>        
+	    	<div class="change-info" id=sunr1></div>
+	    	<div class= "p-info">Sunset</div>            
+	    	<div class="change-info"id=suns1></div>
+	    </div>
+	    
+
+
+
+	    <div class="whtext">
+	    	
+	    	<p>The highest today will be <span id="highest"></span> degrees and lowest will be <span id="lowest"></span> degrees.
+	    	</p>
+	    </div>
+    </div>
+
+    <div id='low2' class="lower2">
+    	<span id='se1'><input class="city" id="search-text2" type="text"  placeholder="Search city..." ></span>
+    	
+
+
+		<div class="location">
+			<h2 id="city-name2"> New York</h2>
+		</div>
+		<div class="weather"><h3><span id="wh-name2">Rain</span><img src="" id="icon2"></h3></div>
+    
+
+
+    <!--this is to create the temperature line with deegee image-->
+
+    
+    	<div class="temperatute"><h2 id="temp2" ></h2></div>
+
+    <!--now to crete our information table-->
+	    <div class="info">
+	    	
+	    	<div class= "p-info" >Humidity  </div>              
+	    	<div class="change-info" id="humid2" >  55%</div>
+
+	        <div class= "p-info">Wind </div>                    
+	    	<div class="change-info" id="wind2">  10 km/hr</div>
+	    	<div class= "p-info">Sunrise </div>        
+	    	<div class="change-info" id=sunr2></div>
+	    	<div class= "p-info">Sunset</div>            
+	    	<div class="change-info"id=suns2></div>
+	    </div>
+
+
+
+	    <div class="whtext">
+	    	
+	    	<p>The highest today will be <span id="highest2"></span> degrees and lowest will be <span id="lowest2"></span> degrees.
+	    	</p>
+	    </div>
+    </div>
+
+    <div class='btt'><button class="add" id="ad" onclick='add()'><span>Add City.. </span></button></div>
+    <div class='btt'><button class="add" id="rem" onclick='remove()'><span>Remove City..</span></button></div>
+
+
+
+
+
+
+
+</body>
+<script src="wt1.js"></script>
+</html>
