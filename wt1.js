@@ -26,7 +26,7 @@ function add(){
 	document.getElementById("low1").style.float="right";
     document.getElementById("low2").style.float="right";
 
-	document.getElementById("rem").style.display='block';
+	document.getElementById("rem1").style.display="block";
 	document.getElementById("low2").style.width="50%";
 	document.getElementById("low1").style.width="50%";
 
@@ -42,7 +42,7 @@ function add(){
 function remove(){
 	document.getElementById("ad").style.display='block';
 	document.getElementById("low2").style.display="none";
-	document.getElementById("rem").style.display="none";
+	document.getElementById("rem1").style.display="none";
 	document.getElementById("low1").style.width="100%";
 
 	//document.getElementById("se1").innerHTML="<input class="city" id="search-text" type="text"  placeholder="Search city..." >";
@@ -50,6 +50,9 @@ function remove(){
 	//document.getElementById("se3").innerHTML="";
 
 }
+
+
+
 
 
 
